@@ -63,7 +63,7 @@ app.post("/bookings", async (req, res) => {
     });
     
     response.form({
-      "message": `http://localhost:3000/qr-code/${savedBooking._id}`,
+      "message": `https://frontend-bus.vercel.app/qr-code/${savedBooking._id}`,
       "language": "english",
       "route": "q",
       "numbers": savedBooking.mobile
